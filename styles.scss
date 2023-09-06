@@ -35,20 +35,29 @@ $default-padding: 55px;
     padding: 10px $padding-x $padding-y $padding-x !important ;
 }
 
+.sticky{
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+   
+}
+
+.float-button{
+    position: fixed !important;
+}
+
+
+
+
 #navbar {
     background: $bg-global-color;
     @include create-container();
     position: relative;
     top: 0;
     width: 100%;
+    z-index: 99999;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: red;
-}
 
 .basic-button:hover {
     text-decoration: none;
@@ -57,14 +66,25 @@ $default-padding: 55px;
 .secondary-text{
     display: flex;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: center;
+    animation:chargeSubtitle 1.5s forwards;
+    animation-delay: 0s;
     
 }
 
+.banner{
+    position: absolute;
+    top: 330px;
 
+}
 
-
-.banner-text {
+.banner-text{
+   line-height: 0.9;     
+   letter-spacing: 9.1px;
+  animation: chargeTitle 1.5s forwards;
+  animation-delay: 0s;
+}
+.banner-text, .big-text {
     font-size: 162px;
     color: $letter-color;
     font-weight: 300;
@@ -81,20 +101,19 @@ $default-padding: 55px;
     width: 100%;
 
     #cover {
-        top: 25px;
-        opacity: 0.8;
+        top: -50px;
+        filter: brightness(60%);
         background-color: black;
     }
     #cover,
     #black-image {
         width: inherit;
         position: absolute;
-
         z-index: -9999;
     }
 
     #black-image {
-        top: 530px;
+        top: 555px;
     }
 }
 
@@ -107,9 +126,28 @@ $default-padding: 55px;
     padding: 2px 9px;
 }
 
+#wsp-button{
+    bottom: 0 !important;
+    padding: 10px;
+}
+
 .button-float{
     position:absolute;
     right: 0;
+}
 
+.showMainText{
+    display: block;
+    transition-property: display;
+    transition-duration: 5s;
+}
 
+@keyframes chargeTitle { 
+    from { left:0px }
+    to {left: 100px; }
+}
+
+@keyframes chargeSubtitle {
+    from {bottom: -50px}
+    to { bottom:0px }
 }
