@@ -1,0 +1,115 @@
+@use 'variables';
+$bg-global-color: black;
+$letter-color: white;
+$gold-color: #98850c;
+$default-padding: 55px;
+
+.nav-section {
+    font-family: "Montserrat", sans-serif;
+    .basic-button,
+    p {
+        color: $letter-color;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 300;
+    }
+    .basic-button {
+        margin-right: 14px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .bg-button {
+        text-transform: uppercase;
+        background: $gold-color;
+        padding: 0px 8px;
+    }
+}
+.row-info {
+    display: grid;
+    justify-items: end;
+}
+
+@mixin create-container($padding-x: $default-padding, $padding-y: 25px) {
+    width: 100%;
+    padding: 10px $padding-x $padding-y $padding-x !important ;
+}
+
+#navbar {
+    background: $bg-global-color;
+    @include create-container();
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: red;
+}
+
+.basic-button:hover {
+    text-decoration: none;
+}
+
+.secondary-text{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+}
+
+
+
+
+.banner-text {
+    font-size: 162px;
+    color: $letter-color;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+}
+
+#banner-secondary-text {
+    color: $gold-color;
+    font-family: "Caveat", cursive;
+    font-size: 62px;
+}
+
+.cover-image {
+    width: 100%;
+
+    #cover {
+        top: 25px;
+        opacity: 0.8;
+        background-color: black;
+    }
+    #cover,
+    #black-image {
+        width: inherit;
+        position: absolute;
+
+        z-index: -9999;
+    }
+
+    #black-image {
+        top: 530px;
+    }
+}
+
+#property-button{
+    top:270px;
+    background: $gold-color;
+    color: $letter-color;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    padding: 2px 9px;
+}
+
+.button-float{
+    position:absolute;
+    right: 0;
+
+
+}

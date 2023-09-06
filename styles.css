@@ -1,0 +1,99 @@
+.nav-section {
+  font-family: "Montserrat", sans-serif;
+}
+.nav-section .basic-button,
+.nav-section p {
+  color: white;
+}
+.nav-section p {
+  font-size: 18px;
+  font-weight: 300;
+}
+.nav-section .basic-button {
+  margin-right: 14px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.nav-section .bg-button {
+  text-transform: uppercase;
+  background: #98850c;
+  padding: 0px 8px;
+}
+
+.row-info {
+  display: grid;
+  justify-items: end;
+}
+
+#navbar {
+  background: black;
+  width: 100%;
+  padding: 10px 55px 25px 55px !important;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: red;
+}
+
+.basic-button:hover {
+  text-decoration: none;
+}
+
+.secondary-text {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.banner-text {
+  font-size: 162px;
+  color: white;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+}
+
+#banner-secondary-text {
+  color: #98850c;
+  font-family: "Caveat", cursive;
+  font-size: 62px;
+}
+
+.cover-image {
+  width: 100%;
+}
+.cover-image #cover {
+  top: 25px;
+  opacity: 0.8;
+  background-color: black;
+}
+.cover-image #cover,
+.cover-image #black-image {
+  width: inherit;
+  position: absolute;
+  z-index: -9999;
+}
+.cover-image #black-image {
+  top: 530px;
+}
+
+#property-button {
+  top: 270px;
+  background: #98850c;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding: 2px 9px;
+}
+
+.button-float {
+  position: absolute;
+  right: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
