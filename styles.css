@@ -35,11 +35,19 @@
   position: fixed !important;
 }
 
+.first-section {
+  position: relative;
+  height: 780px;
+}
+
+.second-section {
+  position: relative;
+}
+
 #navbar {
   background: black;
   width: 100%;
   padding: 10px 55px 25px 55px !important;
-  position: relative;
   top: 0;
   width: 100%;
   z-index: 99999;
@@ -98,6 +106,7 @@
 }
 .cover-image #black-image {
   top: 555px;
+  height: 430px;
 }
 
 #property-button {
@@ -127,7 +136,7 @@
 
 @keyframes chargeTitle {
   from {
-    left: 0px;
+    left: 15px;
   }
   to {
     left: 100px;
@@ -140,6 +149,41 @@
   to {
     bottom: 0px;
   }
+}
+.item-search {
+  background-color: white;
+  border-left: 1px solid rgb(201, 201, 201);
+  border-right: none;
+  color: #6f6f6f;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 15px 2px 15px 1px;
+}
+
+.button-seeker, .advanced {
+  background-color: #FFCA00;
+}
+
+.seeker {
+  padding: 0 !important;
+}
+
+.filters-button {
+  background-color: #333333;
+}
+
+.text-button {
+  color: white;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
+  border: none;
+  padding: 15px 2px 15px 1px;
 }
 
 /*# sourceMappingURL=styles.css.map */

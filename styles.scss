@@ -3,6 +3,7 @@ $bg-global-color: black;
 $letter-color: white;
 $gold-color: #98850c;
 $default-padding: 55px;
+$third-color:#FFCA00;
 
 .nav-section {
     font-family: "Montserrat", sans-serif;
@@ -45,6 +46,14 @@ $default-padding: 55px;
 .float-button{
     position: fixed !important;
 }
+.first-section{
+    position: relative;
+    height: 780px;
+}
+
+.second-section{
+    position: relative;
+}
 
 
 
@@ -52,7 +61,7 @@ $default-padding: 55px;
 #navbar {
     background: $bg-global-color;
     @include create-container();
-    position: relative;
+    
     top: 0;
     width: 100%;
     z-index: 99999;
@@ -114,6 +123,7 @@ $default-padding: 55px;
 
     #black-image {
         top: 555px;
+        height: 430px;
     }
 }
 
@@ -143,11 +153,45 @@ $default-padding: 55px;
 }
 
 @keyframes chargeTitle { 
-    from { left:0px }
+    from { left:15px }
     to {left: 100px; }
 }
 
 @keyframes chargeSubtitle {
     from {bottom: -50px}
     to { bottom:0px }
+}
+.item-search{
+    background-color: $letter-color;
+    border-left:1px solid rgb(201, 201, 201);
+    border-right: none;
+    color: #6f6f6f;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 15px 2px 15px 1px;
+    
+}
+.button-seeker,.advanced{
+    background-color: $third-color;
+}
+.seeker{
+    padding: 0 !important;
+}
+.filters-button{
+    background-color: #333333;
+}
+
+
+.text-button{
+    color: $letter-color;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    justify-content: space-evenly;
+    border: none;
+    padding: 15px 2px 15px 1px;
 }
