@@ -77,7 +77,8 @@
   animation-delay: 0s;
 }
 
-.banner-text, .big-text {
+.banner-text,
+.big-text {
   font-size: 162px;
   color: white;
   font-weight: 300;
@@ -116,6 +117,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   padding: 2px 9px;
+  z-index: 99999;
 }
 
 #wsp-button {
@@ -161,8 +163,9 @@
   padding: 15px 2px 15px 1px;
 }
 
-.button-seeker, .advanced {
-  background-color: #FFCA00;
+.button-seeker,
+.advanced {
+  background-color: #ffca00;
 }
 
 .seeker {
@@ -184,6 +187,154 @@
   justify-content: space-evenly;
   border: none;
   padding: 15px 2px 15px 1px;
+}
+
+.third-section {
+  margin-top: 60px;
+  position: relative;
+}
+
+.future-text {
+  color: #98850c;
+  font-family: "Caveat", cursive;
+  font-size: 82px;
+  padding: 80px 0 40px;
+}
+
+#second-image,
+#third-image {
+  display: none;
+  transition: 0.9s;
+}
+
+.big-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -9999;
+  height: 800px;
+}
+
+.card-future {
+  background-color: black !important;
+  height: 390px;
+  width: 95%;
+  position: relative;
+  transition: 0.9s;
+}
+
+.card-future:hover {
+  background-color: #ffca00 !important;
+}
+.card-future:hover .superior-rectangle {
+  background-color: black;
+}
+.card-future:hover .card-superior-text {
+  color: black;
+}
+
+.rectangle {
+  height: 90px;
+  position: absolute;
+  width: 50px;
+}
+
+.superior-rectangle {
+  background-color: #ffca00;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.lower-rectangle {
+  background-color: #6f6f6f;
+  left: 0;
+  bottom: 0;
+}
+
+.cards-container {
+  width: 100%;
+  padding: 10px 55px 25px 55px !important;
+  margin-top: 120px;
+}
+
+.row-cards {
+  justify-content: space-evenly;
+}
+
+.card-superior-text {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  color: #ffca00;
+  position: absolute;
+  top: 20px;
+  left: 80px;
+}
+
+.card-lower-text {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  left: 80px;
+}
+.card-lower-text span {
+  font-size: 62px;
+  font-weight: 300;
+}
+
+.fourth-section {
+  background-color: black;
+  margin-top: -68px;
+}
+
+#two-black-image {
+  margin-top: -68px;
+}
+
+.fourth-title, .fourth-subtitle {
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.fourth-title {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.fourth-subtitle {
+  color: #98850c;
+  font-family: "Caveat", cursive;
+}
+
+.fourth-sec {
+  margin-top: 140px;
+  line-height: 0.8;
+}
+
+.section-property {
+  width: 100%;
+  padding: 10px 55px 25px 55px !important;
+}
+
+.content-card {
+  background-color: #6f6f6f;
+  position: absolute;
+  top: 0;
+  left: -150px;
+  height: 330px;
+  width: 100%;
+}
+
+.card-section {
+  margin: auto;
+  border: 1px solid red;
+  height: 330px;
+  position: relative;
 }
 
 /*# sourceMappingURL=styles.css.map */

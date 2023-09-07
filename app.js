@@ -27,3 +27,28 @@ function charginItems(){
   const bannerText = document.getElementById("main-text");
   bannerText.classList.add("showMainText");
 }
+
+var firstImage = document.getElementById("first-image");
+var secondImage = document.getElementById("second-image");
+var thirdImage = document.getElementById("third-image");
+var pisos = document.getElementById("pisos");
+var chalets = document.getElementById("chalets");
+var apartamentos = document.getElementById("apartamentos");
+
+pisos.addEventListener("mouseover", (event) => {
+  secondImage.style.display = "none";
+  thirdImage.style.display = "none";
+  firstImage.style.display = "block";
+});
+
+chalets.addEventListener("mouseover", (event) => {
+  secondImage.style.display = "block";
+  thirdImage.style.display = "none";
+  firstImage.style.display = "none";
+});
+
+apartamentos.addEventListener("mouseover", (event) => {
+  secondImage.style.display = "none";
+  thirdImage.style.display = "block";
+  firstImage.style.display = "none";
+});
